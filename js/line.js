@@ -237,7 +237,7 @@ $(function(){
     /* a 클릭시 function 안의 함수 실행 - 파라미터 자리에 들어간 함수를 콜백함수라고 한다.     
    클릭한 a는, 아래의 실행문 적용 - 인디케이터를 클릭한 요소에 순서값 가져옴 
    만약, oldIdx가 nowIdx와 다르면, 슬라이드를 실행시키고, 자동재생 상태변환 함수호출, 링크차단 함.    */
-    $indicator.on("click",function(){
+    $indicator.on("click",function(evt){
         nowIdx=$indicator.index($(this));
         if(oldIdx != nowIdx) {
             move(); // 슬라이드 함수 호출
